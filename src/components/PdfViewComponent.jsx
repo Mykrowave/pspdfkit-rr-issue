@@ -16,7 +16,7 @@ export default function PdfViewerComponent(props) {
                 // The document to open.
                 document: props.document,
                 // Use the public directory URL as a base URL. PSPDFKit will download its library assets from here.
-                baseUrl: "http://localhost:4173/",
+                baseUrl: "http://localhost:5173/",
             });
         })();
 

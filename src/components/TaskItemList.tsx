@@ -28,10 +28,10 @@ function TaskItemList() {
 
     return (
         <div style={{padding: "20px", width: 900}}>
-            <ul>
+            <ul style={{display: "flex", flexDirection: "row"}}>
                 {taskItems.map((ti, i) => {
-                    return <li key={i} style={{
-                        listStyleType: "none"
+                    return <li  key={i} style={{
+                        listStyleType: "none", margin: "10px"
                     }}>
                         <button onClick={() => setFocusedTaskItem(ti)}>{ti.taskName}</button>
                     </li>
